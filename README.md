@@ -33,10 +33,10 @@ It tests a variety of scenarios, such as:
 "echo -nnn -n hi -n"
 
 # Quotes and variable tests
-"echo \$USER"
-"echo '\$USER'"
-"echo \"\$USER\""
-"echo \$USER\$USER"
+"echo $USER"
+"echo '$USER'"
+"echo "$USER""
+"echo $USER$USER"
    ```
 
 ## 🗂️ How It Works
@@ -47,12 +47,12 @@ The script pipes each test input into your minishell binary, captures the output
 
 2. Make the tester executable:
    ```bash
-chmod +x tester_minishell.sh
+   chmod +x tester_minishell.sh
    ```
 
 3. Run the tester:
    ```bash
-./tester_minishell.sh
+   ./tester_minishell.sh
    ```
 
 ## 👩🏻‍💻 Author
